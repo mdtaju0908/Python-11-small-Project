@@ -14,13 +14,26 @@ class FileTransferApp:
         """Initialize the file transfer app."""
         if base_directory is None:
             base_directory = os.getcwd()
-        self.base_directory = base_directory
+        self.base_directory = os.path.abspath(base_directory)
         self.transfer_history = []
+
+    def _validate_path(self, filepath):
+        """Validate path to prevent directory traversal attacks."""
+        abs_path = os.path.abspath(filepath)
+        # Ensure path is within base directory
+        if not abs_path.startswith(self.base_directory):
+            return False, "Access denied: Path outside base directory."
+        return True, abs_path
 
     def list_files(self, directory=None):
         """List all files in a directory."""
         if directory is None:
             directory = self.base_directory
+        else:
+            valid, result = self._validate_path(directory)
+            if not valid:
+                return False, result
+            directory = result
 
         try:
             items = os.listdir(directory)
@@ -41,6 +54,11 @@ class FileTransferApp:
 
     def get_file_info(self, filepath):
         """Get information about a file."""
+        valid, result = self._validate_path(filepath)
+        if not valid:
+            return False, result
+        filepath = result
+
         try:
             if not os.path.exists(filepath):
                 return False, "File not found."
@@ -65,6 +83,16 @@ class FileTransferApp:
 
     def copy_file(self, source, destination):
         """Copy a file from source to destination."""
+        valid, result = self._validate_path(source)
+        if not valid:
+            return False, result
+        source = result
+
+        valid, result = self._validate_path(destination)
+        if not valid:
+            return False, result
+        destination = result
+
         try:
             if not os.path.exists(source):
                 return False, "Source file not found."
@@ -80,6 +108,16 @@ class FileTransferApp:
 
     def move_file(self, source, destination):
         """Move a file from source to destination."""
+        valid, result = self._validate_path(source)
+        if not valid:
+            return False, result
+        source = result
+
+        valid, result = self._validate_path(destination)
+        if not valid:
+            return False, result
+        destination = result
+
         try:
             if not os.path.exists(source):
                 return False, "Source file not found."
@@ -92,6 +130,11 @@ class FileTransferApp:
 
     def delete_file(self, filepath):
         """Delete a file."""
+        valid, result = self._validate_path(filepath)
+        if not valid:
+            return False, result
+        filepath = result
+
         try:
             if not os.path.exists(filepath):
                 return False, "File not found."
@@ -107,6 +150,11 @@ class FileTransferApp:
 
     def create_directory(self, directory_path):
         """Create a new directory."""
+        valid, result = self._validate_path(directory_path)
+        if not valid:
+            return False, result
+        directory_path = result
+
         try:
             os.makedirs(directory_path, exist_ok=True)
             self._log_transfer("CREATE_DIR", "N/A", directory_path)
@@ -116,12 +164,24 @@ class FileTransferApp:
 
     def rename_file(self, old_path, new_name):
         """Rename a file or directory."""
+        valid, result = self._validate_path(old_path)
+        if not valid:
+            return False, result
+        old_path = result
+
         try:
             if not os.path.exists(old_path):
                 return False, "File not found."
 
             directory = os.path.dirname(old_path)
             new_path = os.path.join(directory, new_name)
+
+            # Validate the new path as well
+            valid, result = self._validate_path(new_path)
+            if not valid:
+                return False, result
+            new_path = result
+
             os.rename(old_path, new_path)
             self._log_transfer("RENAME", old_path, new_path)
             return True, f"Renamed to: {new_name}"

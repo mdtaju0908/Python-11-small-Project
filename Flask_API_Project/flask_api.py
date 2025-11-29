@@ -57,9 +57,13 @@ def create_task():
     if not request.json or "title" not in request.json:
         return jsonify({"error": "Title is required"}), 400
 
+    title = request.json["title"]
+    if not isinstance(title, str) or len(title) > 200 or len(title.strip()) == 0:
+        return jsonify({"error": "Title must be a non-empty string (max 200 chars)"}), 400
+
     new_task = {
         "id": get_next_id(),
-        "title": request.json["title"],
+        "title": title.strip(),
         "completed": request.json.get("completed", False)
     }
     tasks.append(new_task)
@@ -76,7 +80,12 @@ def update_task(task_id):
     if not request.json:
         return jsonify({"error": "No data provided"}), 400
 
-    task["title"] = request.json.get("title", task["title"])
+    if "title" in request.json:
+        title = request.json["title"]
+        if not isinstance(title, str) or len(title) > 200 or len(title.strip()) == 0:
+            return jsonify({"error": "Title must be a non-empty string (max 200 chars)"}), 400
+        task["title"] = title.strip()
+
     task["completed"] = request.json.get("completed", task["completed"])
     return jsonify(task)
 
@@ -133,4 +142,4 @@ if __name__ == "__main__":
     print("  GET  /tasks/pending   - Get pending tasks")
     print("\n" + "=" * 50)
 
-    app.run(debug=True, host="0.0.0.0", port=5000)
+    app.run(debug=False, host="127.0.0.1", port=5000)

@@ -1,6 +1,6 @@
 """
 Text to Speech - A simple text to speech converter
-Uses pyttsx3 library for offline TTS or gTTS for online TTS
+Uses pyttsx3 library for offline TTS
 """
 
 
