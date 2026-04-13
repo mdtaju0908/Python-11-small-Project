@@ -2,7 +2,7 @@ import streamlit as st
 
 st.set_page_config(page_title="Calculator App", layout="centered")
 
-st.title("🧮 Smart Calculator (Streamlit)")
+st.title("🧮 Smart Calculator")
 
 # Tabs for features
 tab1, tab2 = st.tabs(["Basic Calculator", "Conversions"])
