@@ -1,0 +1,8 @@
+streamlit
+python-dotenv
+google-generativeai
+smtplib
+ssl
+twilio
+pyttsx3
+pywhatkit
