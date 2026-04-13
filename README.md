@@ -72,24 +72,131 @@ This repository contains **11 Python mini projects** designed to strengthen prog
 ### 1️⃣ Clone the Repository
 ```bash
 git clone https://github.com/mdtaju0908/Python-11-small-Project.git
+```
+```bash
 cd Python-11-small-Project
 ```
 
-### 2️⃣ Navigate to a Project
-Each project is inside its own folder. For example, to run the **AI Chatbot**:
+### 🚀 How to Run Projects
+
+#### 01. AI Chatbot
 ```bash
 cd AI_Chat_bot
 ```
-
-### 3️⃣ Install Dependencies
-Check the individual project's `.md` file for specific setup instructions, but generally:
 ```bash
 pip install -r requirements.txt
 ```
-
-### 4️⃣ Run the App
-Most projects use **Streamlit**:
 ```bash
 streamlit run ai.py
 ```
-*(Replace `ai.py` with the project's main script name)*
+
+#### 02. ATM PIN System
+```bash
+cd ATM_System
+```
+```bash
+pip install -r requirements.txt
+```
+```bash
+streamlit run atm.py
+```
+
+#### 03. Calculator
+```bash
+cd Calculator
+```
+```bash
+pip install -r requirements.txt
+```
+```bash
+streamlit run calculator.py
+```
+
+#### 04. Email Sender
+```bash
+cd Email_Sender
+```
+```bash
+pip install -r requirements.txt
+```
+```bash
+streamlit run email.py
+```
+
+#### 05. File Transfer App
+```bash
+cd file_transfer_app
+```
+```bash
+pip install -r requirements.txt
+```
+```bash
+streamlit run file.py
+```
+
+#### 06. Flask API Project
+```bash
+cd Flask_API_Project
+```
+```bash
+pip install -r requirements.txt
+```
+```bash
+streamlit run api.py
+```
+
+#### 07. Movie Ticket Checker
+```bash
+cd Movie_Ticket
+```
+```bash
+pip install -r requirements.txt
+```
+```bash
+streamlit run ticket.py
+```
+
+#### 08. SMS Automation
+```bash
+cd SMS_Automation
+```
+```bash
+pip install -r requirements.txt
+```
+```bash
+streamlit run sms.py
+```
+
+#### 09. Text-to-Speech
+```bash
+cd TTS
+```
+```bash
+pip install -r requirements.txt
+```
+```bash
+streamlit run tts.py
+```
+
+#### 10. Unit Converter App
+```bash
+cd unit_converter_app
+```
+```bash
+pip install -r requirements.txt
+```
+```bash
+streamlit run unit.py
+```
+
+#### 11. WhatsApp Automatic
+```bash
+cd whatsapp_automatic
+```
+```bash
+pip install -r requirements.txt
+```
+```bash
+streamlit run app.py
+```
+
