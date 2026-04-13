@@ -147,8 +147,6 @@ pip install -r requirements.txt
 streamlit run unit.py
 ```
 
-```
-
 #### 11. WhatsApp Automatic
 ```bash
 cd whatsapp_automatic
