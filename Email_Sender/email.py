@@ -1,4 +1,4 @@
-import st as st
+import streamlit as st
 import smtplib
 import ssl
 import os

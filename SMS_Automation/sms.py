@@ -1,4 +1,4 @@
-import st as st
+import streamlit as st
 import os
 from dotenv import load_dotenv
 from twilio.rest import Client

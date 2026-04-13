@@ -1,4 +1,4 @@
-import st as st
+import streamlit as st
 
 st.title("🎬 Movie Ticket Checker")
 
