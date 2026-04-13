@@ -72,8 +72,6 @@ This repository contains **11 Python mini projects** designed to strengthen prog
 ### 1️⃣ Clone the Repository
 ```bash
 git clone https://github.com/mdtaju0908/Python-11-small-Project.git
-```
-```bash
 cd Python-11-small-Project
 ```
 
@@ -82,121 +80,92 @@ cd Python-11-small-Project
 #### 01. AI Chatbot
 ```bash
 cd AI_Chat_bot
-```
-```bash
 pip install -r requirements.txt
-```
-```bash
 streamlit run ai.py
 ```
 
 #### 02. ATM PIN System
 ```bash
 cd ATM_System
-```
-```bash
 pip install -r requirements.txt
-```
-```bash
 streamlit run atm.py
 ```
 
 #### 03. Calculator
 ```bash
 cd Calculator
-```
-```bash
 pip install -r requirements.txt
-```
-```bash
 streamlit run calculator.py
 ```
 
 #### 04. Email Sender
 ```bash
 cd Email_Sender
-```
-```bash
 pip install -r requirements.txt
-```
-```bash
 streamlit run email.py
 ```
 
 #### 05. File Transfer App
 ```bash
 cd file_transfer_app
-```
-```bash
 pip install -r requirements.txt
-```
-```bash
 streamlit run file.py
 ```
 
 #### 06. Flask API Project
 ```bash
 cd Flask_API_Project
-```
-```bash
 pip install -r requirements.txt
-```
-```bash
 streamlit run api.py
 ```
 
 #### 07. Movie Ticket Checker
 ```bash
 cd Movie_Ticket
-```
-```bash
 pip install -r requirements.txt
-```
-```bash
 streamlit run ticket.py
 ```
 
 #### 08. SMS Automation
 ```bash
 cd SMS_Automation
-```
-```bash
 pip install -r requirements.txt
-```
-```bash
 streamlit run sms.py
 ```
 
 #### 09. Text-to-Speech
 ```bash
 cd TTS
-```
-```bash
 pip install -r requirements.txt
-```
-```bash
 streamlit run tts.py
 ```
 
 #### 10. Unit Converter App
 ```bash
 cd unit_converter_app
-```
-```bash
 pip install -r requirements.txt
-```
-```bash
 streamlit run unit.py
+```
+
 ```
 
 #### 11. WhatsApp Automatic
 ```bash
 cd whatsapp_automatic
-```
-```bash
 pip install -r requirements.txt
-```
-```bash
 streamlit run app.py
 ```
+
+---
+
+## 📜 License
+This project is licensed under a **Custom Personal Use License**.
+- ✅ **Allowed**: Personal use, cloning, and learning.
+- ❌ **Prohibited**: Re-uploading, re-distributing, or including this code in other repositories/projects.
+- All rights are reserved to **Md Taju** (@mdtaju0908).
+- For more details, see the [LICENSE](./LICENSE) file.
+
+---
+**Note:** If you find this project helpful, don't forget to **Star ⭐** the repo!
+
 
