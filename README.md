@@ -43,6 +43,104 @@ This repository contains **11 Python mini projects** designed to strengthen prog
 🔹 Each project comes with its own documentation (README/MD file)  
 
 ---
+## 📜 License
+This project is licensed under a **Custom Personal Use License**.
+- ✅ **Allowed**: Personal use, cloning, and learning.
+- ❌ **Prohibited**: Re-uploading, re-distributing, or including this code in other repositories/projects.
+- All rights are reserved to **Md Taju** (@mdtaju0908).
+- For more details, see the [LICENSE](./LICENSE) file.
+
+---
+**Note:** If you find this project helpful, don't forget to **Star ⭐** the repo!
+
+---
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/mdtaju0908/Python-11-small-Project.git
+cd Python-11-small-Project
+```
+
+### 🚀 How to Run Projects
+
+#### 01. 🤖 AI Chatbot
+```bash
+cd AI_Chat_bot
+pip install -r requirements.txt
+streamlit run ai.py
+```
+
+#### 02. 🏧 ATM PIN System
+```bash
+cd ATM_System
+pip install -r requirements.txt
+streamlit run atm.py
+```
+
+#### 03. 🧮 Calculator
+```bash
+cd Calculator
+pip install -r requirements.txt
+streamlit run calculator.py
+```
+
+#### 04. 📧 Email Sender
+```bash
+cd Email_Sender
+pip install -r requirements.txt
+streamlit run email.py
+```
+
+#### 05. 📁 File Transfer App
+```bash
+cd file_transfer_app
+pip install -r requirements.txt
+streamlit run file.py
+```
+
+#### 06. 🌐 Flask API Project
+```bash
+cd Flask_API_Project
+pip install -r requirements.txt
+streamlit run api.py
+```
+
+#### 07. 🎬 Movie Ticket Checker
+```bash
+cd Movie_Ticket
+pip install -r requirements.txt
+streamlit run ticket.py
+```
+
+#### 08. 📩 SMS Automation
+```bash
+cd SMS_Automation
+pip install -r requirements.txt
+streamlit run sms.py
+```
+
+#### 09. 🎤 Text-to-Speech
+```bash
+cd TTS
+pip install -r requirements.txt
+streamlit run tts.py
+```
+
+#### 10. 🔄 Unit Converter App
+```bash
+cd unit_converter_app
+pip install -r requirements.txt
+streamlit run unit.py
+```
+
+#### 11. 💬 WhatsApp Automatic
+```bash
+cd whatsapp_automatic
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+---
 ## 🌍 Connect With Me
 
 <p align="left">
@@ -69,101 +167,5 @@ This repository contains **11 Python mini projects** designed to strengthen prog
   </a>
 </p>
 
-### 1️⃣ Clone the Repository
-```bash
-git clone https://github.com/mdtaju0908/Python-11-small-Project.git
-cd Python-11-small-Project
-```
-
-### 🚀 How to Run Projects
-
-#### 01. AI Chatbot
-```bash
-cd AI_Chat_bot
-pip install -r requirements.txt
-streamlit run ai.py
-```
-
-#### 02. ATM PIN System
-```bash
-cd ATM_System
-pip install -r requirements.txt
-streamlit run atm.py
-```
-
-#### 03. Calculator
-```bash
-cd Calculator
-pip install -r requirements.txt
-streamlit run calculator.py
-```
-
-#### 04. Email Sender
-```bash
-cd Email_Sender
-pip install -r requirements.txt
-streamlit run email.py
-```
-
-#### 05. File Transfer App
-```bash
-cd file_transfer_app
-pip install -r requirements.txt
-streamlit run file.py
-```
-
-#### 06. Flask API Project
-```bash
-cd Flask_API_Project
-pip install -r requirements.txt
-streamlit run api.py
-```
-
-#### 07. Movie Ticket Checker
-```bash
-cd Movie_Ticket
-pip install -r requirements.txt
-streamlit run ticket.py
-```
-
-#### 08. SMS Automation
-```bash
-cd SMS_Automation
-pip install -r requirements.txt
-streamlit run sms.py
-```
-
-#### 09. Text-to-Speech
-```bash
-cd TTS
-pip install -r requirements.txt
-streamlit run tts.py
-```
-
-#### 10. Unit Converter App
-```bash
-cd unit_converter_app
-pip install -r requirements.txt
-streamlit run unit.py
-```
-
-#### 11. WhatsApp Automatic
-```bash
-cd whatsapp_automatic
-pip install -r requirements.txt
-streamlit run app.py
-```
-
----
-
-## 📜 License
-This project is licensed under a **Custom Personal Use License**.
-- ✅ **Allowed**: Personal use, cloning, and learning.
-- ❌ **Prohibited**: Re-uploading, re-distributing, or including this code in other repositories/projects.
-- All rights are reserved to **Md Taju** (@mdtaju0908).
-- For more details, see the [LICENSE](./LICENSE) file.
-
----
-**Note:** If you find this project helpful, don't forget to **Star ⭐** the repo!
 
 
